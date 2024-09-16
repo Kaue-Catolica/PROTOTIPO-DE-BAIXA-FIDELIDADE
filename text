@@ -1,0 +1,112 @@
+/* CAIXA DE CONTEUDO */
+.container-card {
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.boxed {
+    background-color: #0980e0;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.boxed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.boxed-header h3 {
+    margin: 0;
+}
+
+.boxed-content {
+    display: none;
+    padding: 10px 0;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+    color: #333;
+}
+
+.boxed-content .card {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.boxed-content .card:last-child {
+    border-bottom: none;
+}
+
+.icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.boxed.expanded .icon {
+    transform: rotate(45deg);
+}
+
+.accordion-content {
+    display: none;
+    background-color: white;
+    color: #333;
+    border-radius: 0 0 5px 5px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+
+.code-container {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-left: 4px solid #a202ff;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+.code-container code {
+    font-family: "Courier New", Courier, monospace;
+    color: #0000ff;
+}
+h3 {
+    font-family: Verdana, sans-serif;
+    color: #333;
+}
+
+
+
+
+
+
+<!-- Dados do Site -->  
+<div class="container-card">
+    <div class="boxed">
+        <div class="boxed-header" onclick="expandir(this)">
+            <h3>Estrutura Básica de um Programa em C</h3>
+            <span class="icon">+</span>
+        </div>
+        <div class="boxed-content">
+            <div class="card">
+                <h4>Estruturação</h4>
+                <p>Todo programa em C segue uma estrutura básica. Abaixo está um exemplo simples:</p>
+            </div>
+            <h3>Exemplo</h3>
+            <div class="code-container">
+                <pre><code>#include <stdio.h>
+
+                    int main() {
+                        printf("Hello, World!\n");
+                        return 0;
+                    }
+                </code></pre>
+            </div>
+            <p>
+                <b>#include</b> <stdio.h>: Diretiva de pré-processador que inclui a biblioteca padrão de entrada e saída.<br>
+                    <b>int main():</b> Função principal onde o programa começa sua execução.<br>
+                    <b>printf():</b> Função usada para imprimir uma mensagem na tela.<br>
+                    <b>return 0;:</b> Indica que o programa terminou com sucesso.
+            </p>                
+    </div>
+</div>

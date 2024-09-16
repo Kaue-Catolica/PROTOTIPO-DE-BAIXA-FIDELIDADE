@@ -1,0 +1,141 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100%;
+    min-height: 100vh;
+    place-items: center;
+    display: grid;
+    background-color:   rgb(65, 177, 192);
+}
+
+.container{
+    display: grid;
+    place-items: center;
+}
+
+.sinal {
+    width: 100px;
+    height: 200px;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 10px;
+    padding: 17px;
+    background-color: gray;
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.btn1 {
+    color: #278ce5;
+    background-color: white;
+    border-style: none;
+    
+}
+
+.btn2 {
+    color: #6aafe7;
+    background-color: #eaf4f9;
+    border-style: none;
+}
+
+.btn3 {
+    color: white;
+    background-color: #268ce5;
+    border-style: none;
+}
+
+.btn4 {
+    color: #278ce5;
+    background-color: white;
+    border-style: solid;
+    border-color: #268ce5;
+}
+
+.btn5 {
+   
+    background-color: white;
+    border-style: none;
+}
+
+.luzes {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: relative;
+    display: block;
+    background-color: rgb(0, 0,0,0.3)
+}
+
+.luzes::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-right: 4px solid rgb(255, 255,255,0.6);
+    top: 5%;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: rgb(255, 238, 0);
+    box-shadow: 0 0 10px 1px #f1c40f;
+}
+
+.green {
+    background-color: green;
+}
+
+.chao{
+    width: 360px;
+    height: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 1px lightgreen;
+}
+
+.poste{
+    width: 10px;
+    height: 240px;
+    background-color: rgb(0, 0,0,0.5);
+}
+
+
+
+.new1 {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.new2 {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border: black solid;
+    border-radius: 50%;
+    margin: 0px;
+    padding: 0;
+}
+
+.new3 {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+}
