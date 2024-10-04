@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas Condicionais e de Repetição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Menu lateral -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#introducao" class="menu-item">Introdução</a></li>
+                <li><a href="#if" class="menu-item">Estrutura If</a></li>
+                <li><a href="#ifelse" class="menu-item">Estrutura If-Else</a></li>
+                <li><a href="#switch" class="menu-item">Estrutura Switch</a></li>
+                <li><a href="#repeticao" class="menu-item">Estruturas de Repetição</a></li>
+                <li><a href="#exercicios" class="menu-item">Exercícios</a></li>
+                <li><a href="#desafios" class="menu-item">Desafios</a></li>
+            </ul>
+        </nav>
+
+        <!-- Conteúdo principal -->
+        <div class="content">
+            <section id="introducao">
+                <h2>Introdução</h2>
+                <p>As <strong>estruturas condicionais</strong> permitem que seu programa tome decisões com base em condições. As principais são <strong>if, if-else, switch</strong>. Além disso, temos <strong>estruturas de repetição</strong>, como <strong>while</strong> e <strong>for</strong>, que permitem executar blocos de código várias vezes.</p>
+            </section>
+
+            <section id="if">
+                <h2>Estrutura If</h2>
+                <p>A estrutura <strong>if</strong> verifica se uma condição é verdadeira e, caso seja, executa um bloco de código. Caso contrário, esse bloco é ignorado.</p>
+                <pre>
+<code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int idade = 18;
+    if (idade >= 18) {
+        printf("Você é maior de idade.");
+    }
+    return 0;
+}
+</code>
+                </pre>
+            </section>
+
+            <section id="ifelse">
+                <h2>Estrutura If-Else</h2>
+                <p>O <strong>if-else</strong> adiciona uma alternativa. Se a condição no <strong>if</strong> não for verdadeira, o bloco de código no <strong>else</strong> será executado.</p>
+                <pre>
+<code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int idade = 16;
+    if (idade >= 18) {
+        printf("Você é maior de idade.");
+    } else {
+        printf("Você é menor de idade.");
+    }
+    return 0;
+}
+</code>
+                </pre>
+            </section>
+
+            <section id="switch">
+                <h2>Estrutura Switch</h2>
+                <p>A estrutura <strong>switch</strong> permite testar uma variável contra várias condições, executando blocos de código diferentes com base no valor da variável.</p>
+                <pre>
+<code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int dia = 3;
+
+    switch(dia) {
+        case 1:
+            printf("Domingo");
+            break;
+        case 2:
+            printf("Segunda-feira");
+            break;
+        case 3:
+            printf("Terça-feira");
+            break;
+        default:
+            printf("Dia inválido");
+    }
+    return 0;
+}
+</code>
+                </pre>
+            </section>
+
+            <section id="repeticao">
+                <h2>Estruturas de Repetição</h2>
+                <p>As estruturas de repetição <strong>while</strong> e <strong>for</strong> são usadas para executar um bloco de código várias vezes enquanto uma condição for verdadeira.</p>
+
+                <h3>Exemplo de While:</h3>
+                <pre>
+<code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int i = 0;
+    while (i < 5) {
+        printf("%d\n", i);
+        i++;
+    }
+    return 0;
+}
+</code>
+                </pre>
+
+                <h3>Exemplo de For:</h3>
+                <pre>
+<code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    for (int i = 0; i < 5; i++) {
+        printf("%d\n", i);
+    }
+    return 0;
+}
+</code>
+                </pre>
+            </section>
+
+            <section id="exercicios">
+                <h2>Exercícios</h2>
+                <p>Pratique o uso de estruturas condicionais com os exemplos a seguir:</p>
+
+                <h3>1. Verifique se um número é par ou ímpar:</h3>
+                <pre>
+<code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int numero;
+    printf("Digite um número: ");
+    scanf("%d", &numero);
+
+    if (numero % 2 == 0) {
+        printf("O número é par.");
+    } else {
+        printf("O número é ímpar.");
+    }
+    return 0;
+}
+</code>
+                </pre>
+
+                <h3>2. Crie um programa que verifica o dia da semana com switch:</h3>
+                <pre>
+<code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int dia;
+    printf("Digite um número (1-7) para o dia da semana: ");
+    scanf("%d", &dia);
+
+    switch(dia) {
+        case 1:
+            printf("Domingo");
+            break;
+        case 2:
+            printf("Segunda-feira");
+            break;
+        case 3:
+            printf("Terça-feira");
+            break;
+        case 4:
+            printf("Quarta-feira");
+            break;
+        case 5:
+            printf("Quinta-feira");
+            break;
+        case 6:
+            printf("Sexta-feira");
+            break;
+        case 7:
+            printf("Sábado");
+            break;
+        default:
+            printf("Dia inválido");
+    }
+    return 0;
+}
+</code>
+                </pre>
+            </section>
+
+            <section id="desafios">
+                <h2>Desafios</h2>
+                <p>Testes seu conhecimento com esses desafios:</p>
+
+                <h3>1. Calcule o desconto em uma compra baseado no valor:</h3>
+                <pre>
+<code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    float valor;
+    printf("Digite o valor da compra: ");
+    scanf("%f", &valor);
+
+    if (valor >= 500) {
+        printf("Desconto de 20%%.");
+    } else if (valor >= 300) {
+        printf("Desconto de 15%%.");
+    } else {
+        printf("Desconto de 10%%.");
+    }
+
+    return 0;
+}
+</code>
+                </pre>
+
+                <h3>2. Crie um jogo onde o usuário deve adivinhar um número entre 1 e 10:</h3>
+                <pre>
+<code>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;time.h&gt;
+
+int main() {
+    int numero, tentativa;
+    srand(time(NULL));
+    numero = rand() % 10 + 1;
+
+    printf("Adivinhe o número (entre 1 e 10): ");
+    do {
+        scanf("%d", &tentativa);
+        if (tentativa > numero) {
+            printf("Muito alto! Tente novamente: ");
+        } else if (tentativa < numero) {
+            printf("Muito baixo! Tente novamente: ");
+        }
+    } while (tentativa != numero);
+
+    printf("Parabéns! Você adivinhou o número!");
+    return 0;
+}
+</code>
+                </pre>
+            </section>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Estruturas Condicionais</h1>
+        <p>Veja como as estruturas condicionais funcionam com este exemplo interativo:</p>
+
+        <!-- JSFiddle embedded -->
+        <iframe width="100%" height="300" src="https://jsfiddle.net/seu_fiddle_id/embedded/js,html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+        <!-- Outros conteúdos podem vir aqui -->
+    </div>
+
+    <!-- JavaScript para destacar a seção atual -->
+    <script>
+        // Capturar todos os itens de menu
+        const menuItems = document.querySelectorAll('.menu-item');
+
+        // Função para verificar a seção ativa
+        function highlightSection() {
+            let index = menuItems.length;
+
+            // Verifica cada seção e destaca a correspondente no menu
+            while (--index && window.scrollY + 50 < document.querySelector(menuItems[index].getAttribute('href')).offsetTop) {}
+
+            // Remove destaque de todos os links e aplica no link correto
+            menuItems.forEach((item) => item.classList.remove('active'));
+            menuItems[index].classList.add('active');
+        }
+
+        // Evento de scroll para verificar a posição da página
+        window.addEventListener('scroll', highlightSection);
+    </script>
+</body>
+</html>

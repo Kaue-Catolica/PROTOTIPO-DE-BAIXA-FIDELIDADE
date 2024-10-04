@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprenda C - Exercícios Interativos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Aprenda C - Exercícios Interativos</h1>
+        </header>
+        <main>
+            <div class="exercise-selection">
+                <label for="exercise-select">Escolha um exercício:</label>
+                <select id="exercise-select">
+                    <option value="0">Olá, Mundo!</option>
+                    <option value="1">Soma de dois números</option>
+                </select>
+            </div>
+            <div class="exercise-description">
+                <h2 id="exercise-title">Título do Exercício</h2>
+                <p id="exercise-description">Descrição do exercício aqui.</p>
+            </div>
+            <div class="code-editor">
+                <textarea id="code-input" rows="10" cols="50"></textarea>
+            </div>
+            <div class="controls">
+                <button id="run-code">Executar Código</button>
+            </div>
+            <div class="output">
+                <h3>Saída:</h3>
+                <pre id="code-output"></pre>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
