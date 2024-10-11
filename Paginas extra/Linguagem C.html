@@ -12,12 +12,10 @@
         <nav class="sidebar">
             <ul>
                 <li><a href="#introducao" class="menu-item">Introdução</a></li>
-                <li><a href="#if" class="menu-item">Estrutura If</a></li>
-                <li><a href="#ifelse" class="menu-item">Estrutura If-Else</a></li>
-                <li><a href="#switch" class="menu-item">Estrutura Switch</a></li>
-                <li><a href="#repeticao" class="menu-item">Estruturas de Repetição</a></li>
-                <li><a href="#exercicios" class="menu-item">Exercícios</a></li>
-                <li><a href="#desafios" class="menu-item">Desafios</a></li>
+                <li><a href="#C" class="menu-item">Estrutura C</a></li>
+                <li><a href="#aprender" class="menu-item">O que Você Vai Aprender?</a></li>
+                <li><a href="#comecar" class="menu-item">Como Começar?</a></li>
+                <li><a href="#conclusao" class="menu-item">Conclusão</a></li>
             </ul>
         </nav>
 
@@ -25,262 +23,107 @@
         <div class="content">
             <section id="introducao">
                 <h2>Introdução</h2>
-                <p>As <strong>estruturas condicionais</strong> permitem que seu programa tome decisões com base em condições. As principais são <strong>if, if-else, switch</strong>. Além disso, temos <strong>estruturas de repetição</strong>, como <strong>while</strong> e <strong>for</strong>, que permitem executar blocos de código várias vezes.</p>
+                <p>A <strong> linguagem C</strong> é uma das linguagens de programação mais fundamentais e influentes, 
+                    amplamente utilizada em diversas áreas da computação. Criada na década de 1970 por <strong>Dennis 
+                    Ritchie, C </strong> é uma escolha popular para quem deseja entender os conceitos essenciais da 
+                    programação e desenvolver software eficiente.</p>
             </section>
 
-            <section id="if">
-                <h2>Estrutura If</h2>
-                <p>A estrutura <strong>if</strong> verifica se uma condição é verdadeira e, caso seja, executa um bloco de código. Caso contrário, esse bloco é ignorado.</p>
-                <pre>
-<code>
-#include &lt;stdio.h&gt;
-
-int main() {
-    int idade = 18;
-    if (idade >= 18) {
-        printf("Você é maior de idade.");
-    }
-    return 0;
-}
-</code>
-                </pre>
+            <section id="C">
+                <h2>Por que Aprender C?</h2>
+                <h3>1. Base Sólida.</h3>
+                <p>-Fundamentos da Programação: C ensina conceitos como variáveis, tipos de dados, estruturas 
+                    de controle (if, for, while), funções e arrays. Esses fundamentos são cruciais para qualquer 
+                    linguagem de programação que você venha a aprender depois.
+                    </p>
+                <h3>2. Desempenho e Eficiência.</h3>    
+                <p>-Controle sobre o Hardware: C permite que você escreva programas que interagem 
+                   diretamente com o hardware, resultando em código altamente eficiente e rápido.
+                    </p>
+                <h3>3. Portabilidade.</h3>    
+                <p>-Escreva uma vez, execute em qualquer lugar: Os programas em C podem ser facilmente 
+                   transferidos entre diferentes sistemas operacionais, o que torna essa linguagem 
+                   extremamente flexível e versátil.
+                    </p>
+                <h3>4. Aplicações Diversificadas.</h3>    
+                <p>-Uso em Várias Áreas: C é amplamente utilizado em desenvolvimento de sistemas operacionais, 
+                    software embarcado, jogos e aplicações que exigem alto desempenho.
+                    </p> 
+                <h3>5. Comunidade e Recursos</h3>    
+                <p>-Apoio e Aprendizado: A linguagem C possui uma comunidade grande e ativa, oferecendo uma 
+                   variedade de recursos, como livros, tutoriais online e fóruns de discussão, que facilitam o 
+                   aprendizado.
+                    </p>        
             </section>
 
-            <section id="ifelse">
-                <h2>Estrutura If-Else</h2>
-                <p>O <strong>if-else</strong> adiciona uma alternativa. Se a condição no <strong>if</strong> não for verdadeira, o bloco de código no <strong>else</strong> será executado.</p>
-                <pre>
-<code>
-#include &lt;stdio.h&gt;
+            <section id="aprender">
+                <h2>O que Você Vai Aprender?</h2>
+                <p>-Ao longo do seu aprendizado em C, você explorará os seguintes tópicos:
+                    </p>
+                <h3>1. Sintaxe da Linguagem.</h3>
+                <p>-Compreensão das regras básicas que definem a estrutura do código em 
+                C.
+                     </p>
+                <h3>2. Estruturas de Controle.</h3>
+                <p>-Uso de <strong>condicionais e loops</strong> para controlar o fluxo do programa.
+                    </p>
+                 
+                <h3>3. Funções.</h3>
+                <p>-Criação de funções para modularizar o código e tornar a programação mais 
+                organizada. 
+                    </p>  
+                
+                <h3>4. Manipulação de Strings e Arquivos.</h3>
+                <p>-Aprender a trabalhar com texto e arquivos, fundamentais 
+                   em muitas aplicações. 
+                    </p>   
 
-int main() {
-    int idade = 16;
-    if (idade >= 18) {
-        printf("Você é maior de idade.");
-    } else {
-        printf("Você é menor de idade.");
-    }
-    return 0;
-}
-</code>
-                </pre>
+                <h3>5. Ponteiros.</h3>
+                <p>-Entendimento de ponteiros e alocação dinâmica de memória, conceitos avançados 
+                   que oferecem grande poder e flexibilidade.
+                    </p>   
+
+                <h3>6. Estruturas de Dados.</h3>
+                <p>-Implementação de estruturas como listas e arrays, essenciais para a 
+                    organização de dados 
+                </p>      
+
             </section>
 
-            <section id="switch">
-                <h2>Estrutura Switch</h2>
-                <p>A estrutura <strong>switch</strong> permite testar uma variável contra várias condições, executando blocos de código diferentes com base no valor da variável.</p>
-                <pre>
-<code>
-#include &lt;stdio.h&gt;
+            <section id="comecar">
+                <h2>Como Começar?</h2>
 
-int main() {
-    int dia = 3;
-
-    switch(dia) {
-        case 1:
-            printf("Domingo");
-            break;
-        case 2:
-            printf("Segunda-feira");
-            break;
-        case 3:
-            printf("Terça-feira");
-            break;
-        default:
-            printf("Dia inválido");
-    }
-    return 0;
-}
-</code>
-                </pre>
+                <h3>Passo 1: Escolha um Ambiente de Desenvolvimento.</h3>
+                <p>-Instale um compilador C, como o GCC, e um editor de texto ou um IDE (Ambiente de 
+                    Desenvolvimento Integrado) para escrever seu código.
+                     </p>
+                <h3>Passo 2: Explore Tutoriais e Cursos.</h3>
+                <p>-Utilize recursos online, como plataformas de ensino, vídeos e tutoriais interativos que guiarão 
+                    você nos conceitos de C.
+                    </p>
+                 
+                <h3>Passo 3: Pratique Regularmente.</h3>
+                <p>-A prática é fundamental! Resolva exercícios, participe de desafios de programação e trabalhe 
+                   em projetos pequenos. 
+                    </p>  
+                
+                <h3>Passo 4: Participe da Comunidade.</h3>
+                <p>-Junte-se a fóruns e grupos de discussão para tirar dúvidas e compartilhar experiências com 
+                    outros aprendizes e profissionais.
+                    </p>   
+                    
             </section>
 
-            <section id="repeticao">
-                <h2>Estruturas de Repetição</h2>
-                <p>As estruturas de repetição <strong>while</strong> e <strong>for</strong> são usadas para executar um bloco de código várias vezes enquanto uma condição for verdadeira.</p>
+            <section id="Conclusao">
+                <h2>Conclusão</h2>
 
-                <h3>Exemplo de While:</h3>
-                <pre>
-<code>
-#include &lt;stdio.h&gt;
-
-int main() {
-    int i = 0;
-    while (i < 5) {
-        printf("%d\n", i);
-        i++;
-    }
-    return 0;
-}
-</code>
-                </pre>
-
-                <h3>Exemplo de For:</h3>
-                <pre>
-<code>
-#include &lt;stdio.h&gt;
-
-int main() {
-    for (int i = 0; i < 5; i++) {
-        printf("%d\n", i);
-    }
-    return 0;
-}
-</code>
-                </pre>
+                <p>Aprender a linguagem C é uma jornada que pode abrir muitas portas na sua carreira de 
+                    programação. Com uma base sólida em C, você estará preparado para enfrentar desafios em 
+                    diversas áreas da tecnologia. Não perca tempo—comece sua aventura na programação hoje 
+                    mesmo e descubra o potencial que a linguagem C pode oferecer!
+                     </p>
+               
             </section>
-
-            <section id="exercicios">
-                <h2>Exercícios</h2>
-                <p>Pratique o uso de estruturas condicionais com os exemplos a seguir:</p>
-
-                <h3>1. Verifique se um número é par ou ímpar:</h3>
-                <pre>
-<code>
-#include &lt;stdio.h&gt;
-
-int main() {
-    int numero;
-    printf("Digite um número: ");
-    scanf("%d", &numero);
-
-    if (numero % 2 == 0) {
-        printf("O número é par.");
-    } else {
-        printf("O número é ímpar.");
-    }
-    return 0;
-}
-</code>
-                </pre>
-
-                <h3>2. Crie um programa que verifica o dia da semana com switch:</h3>
-                <pre>
-<code>
-#include &lt;stdio.h&gt;
-
-int main() {
-    int dia;
-    printf("Digite um número (1-7) para o dia da semana: ");
-    scanf("%d", &dia);
-
-    switch(dia) {
-        case 1:
-            printf("Domingo");
-            break;
-        case 2:
-            printf("Segunda-feira");
-            break;
-        case 3:
-            printf("Terça-feira");
-            break;
-        case 4:
-            printf("Quarta-feira");
-            break;
-        case 5:
-            printf("Quinta-feira");
-            break;
-        case 6:
-            printf("Sexta-feira");
-            break;
-        case 7:
-            printf("Sábado");
-            break;
-        default:
-            printf("Dia inválido");
-    }
-    return 0;
-}
-</code>
-                </pre>
-            </section>
-
-            <section id="desafios">
-                <h2>Desafios</h2>
-                <p>Testes seu conhecimento com esses desafios:</p>
-
-                <h3>1. Calcule o desconto em uma compra baseado no valor:</h3>
-                <pre>
-<code>
-#include &lt;stdio.h&gt;
-
-int main() {
-    float valor;
-    printf("Digite o valor da compra: ");
-    scanf("%f", &valor);
-
-    if (valor >= 500) {
-        printf("Desconto de 20%%.");
-    } else if (valor >= 300) {
-        printf("Desconto de 15%%.");
-    } else {
-        printf("Desconto de 10%%.");
-    }
-
-    return 0;
-}
-</code>
-                </pre>
-
-                <h3>2. Crie um jogo onde o usuário deve adivinhar um número entre 1 e 10:</h3>
-                <pre>
-<code>
-#include &lt;stdio.h&gt;
-#include &lt;stdlib.h&gt;
-#include &lt;time.h&gt;
-
-int main() {
-    int numero, tentativa;
-    srand(time(NULL));
-    numero = rand() % 10 + 1;
-
-    printf("Adivinhe o número (entre 1 e 10): ");
-    do {
-        scanf("%d", &tentativa);
-        if (tentativa > numero) {
-            printf("Muito alto! Tente novamente: ");
-        } else if (tentativa < numero) {
-            printf("Muito baixo! Tente novamente: ");
-        }
-    } while (tentativa != numero);
-
-    printf("Parabéns! Você adivinhou o número!");
-    return 0;
-}
-</code>
-                </pre>
-            </section>
-        </div>
-    </div>
-    <div class="content">
-        <h1>Estruturas Condicionais</h1>
-        <p>Veja como as estruturas condicionais funcionam com este exemplo interativo:</p>
-
-        <!-- JSFiddle embedded -->
-        <iframe width="100%" height="300" src="https://jsfiddle.net/seu_fiddle_id/embedded/js,html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-
-        <!-- Outros conteúdos podem vir aqui -->
-    </div>
-
-    <!-- JavaScript para destacar a seção atual -->
-    <script>
-        // Capturar todos os itens de menu
-        const menuItems = document.querySelectorAll('.menu-item');
-
-        // Função para verificar a seção ativa
-        function highlightSection() {
-            let index = menuItems.length;
-
-            // Verifica cada seção e destaca a correspondente no menu
-            while (--index && window.scrollY + 50 < document.querySelector(menuItems[index].getAttribute('href')).offsetTop) {}
-
-            // Remove destaque de todos os links e aplica no link correto
-            menuItems.forEach((item) => item.classList.remove('active'));
-            menuItems[index].classList.add('active');
-        }
-
-        // Evento de scroll para verificar a posição da página
-        window.addEventListener('scroll', highlightSection);
-    </script>
+                
 </body>
 </html>

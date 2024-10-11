@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estruturas Condicionais e de Repetição</title>
+    <title>Lógica de Programação</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,11 +12,11 @@
         <nav class="sidebar">
             <ul>
                 <li><a href="#introducao" class="menu-item">Introdução</a></li>
-                <li><a href="#if" class="menu-item">Estrutura If</a></li>
-                <li><a href="#ifelse" class="menu-item">Estrutura If-Else</a></li>
-                <li><a href="#switch" class="menu-item">Estrutura Switch</a></li>
-                <li><a href="#repeticao" class="menu-item">Estruturas de Repetição</a></li>
-                <li><a href="#exercicios" class="menu-item">Exercícios</a></li>
+                <li><a href="#algoritmos" class="menu-item">Algoritmos</a></li>
+                <li><a href="#exalgoritmo" class="menu-item">Exercícios Algoritmos</a></li>
+                <li><a href="#fluxograma" class="menu-item">Fluxogramas</a></li>
+                <li><a href="#exfluxograma" class="menu-item">Exercícios Fluxograma</a></li>
+                <li><a href="#dicas" class="menu-item">Dicas</a></li>
                 <li><a href="#desafios" class="menu-item">Desafios</a></li>
             </ul>
         </nav>
@@ -25,174 +25,70 @@
         <div class="content">
             <section id="introducao">
                 <h2>Introdução</h2>
-                <p>As <strong>estruturas condicionais</strong> permitem que seu programa tome decisões com base em condições. As principais são <strong>if, if-else, switch</strong>. Além disso, temos <strong>estruturas de repetição</strong>, como <strong>while</strong> e <strong>for</strong>, que permitem executar blocos de código várias vezes.</p>
+                <p>A <strong>lógica de programação</strong> é a base do desenvolvimento de software, sem ela não é possível desenvolver soluções eficientes. </p>
+                <p>Ela é a habilidade de entender e decompor um problema complexo, criando um plano de ação detalhado para alcançar uma solução estruturada e eficiente. Sem uma capacidade analítica apurada não é possível criar um bom algoritmo, pois, ao contrário do que muitos pensam, os computadores não são super inteligentes. Na verdade, eles apenas seguem uma sequência lógica de passos que lhe são fornecidos através dos softwares, por isso devemos ser minuciosos ao descrever a solução para um problema.</p>
             </section>
 
-            <section id="if">
-                <h2>Estrutura If</h2>
-                <p>A estrutura <strong>if</strong> verifica se uma condição é verdadeira e, caso seja, executa um bloco de código. Caso contrário, esse bloco é ignorado.</p>
-                <pre>
-<code>
-#include &lt;stdio.h&gt;
-
-int main() {
-    int idade = 18;
-    if (idade >= 18) {
-        printf("Você é maior de idade.");
-    }
-    return 0;
-}
-</code>
-                </pre>
+            <section id="algoritmos">
+                <h2>O que são algoritmos?</h2>
+                <p><strong>Algoritmos</strong> são sequências lógicas para realizar alguma tarefa, é o passo a passo para resolver um problema ou fazer alguma atividade. Podemos pensar em algoritmos como uma receita de bolo. </p>
+                <p>Em uma receita temos os ingredientes, que são as ferramentas necessárias para fazer o bolo, e o modo de preparo, que é a sequência lógica para a realização da tarefa. Exemplo de receita:</p>
+                <p>Ingredientes</p>
+                <ul>
+                    <li>2 xícaras de açúcar</li>
+                    <li>3 xícaras de farinha de trigo</li>
+                    <li>4 colheres de margarina bem cheias</li>
+                    <li>3 ovos</li>
+                    <li>1 e 1/2 xícara de leite aproximadamente</li>
+                    <li>1 colher (sopa) bem cheia de fermento em pó</li>
+                </ul>
+                <p>Modo de Preparo</p>
+                <ol>
+                    <li>Bata as claras em neve;</li>
+                    <li>Reserve;</li>
+                    <li>Bata bem as gemas com a margarina e o açúcar;</li>
+                    <li>Acrescente o leite e farinha aos poucos sem parar de bater;</li>
+                    <li>Por último agregue as claras em neve e o fermento;</li>
+                    <li>Coloque em forma grande de furo central untada e enfarinhada;</li>
+                    <li>Asse em forno médio, preaquecido, por aproximadamente 40 minutos;</li>
+                    <li>Quando espetar um palito e sair limpo estará assado.</li>
+                </ol>
+                <p>Comparando a receita com um software temos que os ingredientes são a entrada de dados (não se preocupe, entenderemos sobre isso nos próximos módulos), o modo de preparo é o processamento e o bolo é o resultado, a saída.</p>
+                <p>Não há apenas uma forma de fazer um bolo, assim  como não existe apenas uma solução para um problema. Ou seja, podemos desenvolver vários códigos diferentes que irão ter o mesmo resultado. Por isso devemos atentar para a eficiência do código, pois nem sempre apenas funcionar é o suficiente. Às vezes precisaremos de uma solução que funcione e seja extremamente rápida. É aí que entra a lógica de programação, procurar a melhor forma de solucionar o problema. Mas como desenvolver essa habilidade? Praticando.</p>
             </section>
 
-            <section id="ifelse">
-                <h2>Estrutura If-Else</h2>
-                <p>O <strong>if-else</strong> adiciona uma alternativa. Se a condição no <strong>if</strong> não for verdadeira, o bloco de código no <strong>else</strong> será executado.</p>
-                <pre>
-<code>
-#include &lt;stdio.h&gt;
-
-int main() {
-    int idade = 16;
-    if (idade >= 18) {
-        printf("Você é maior de idade.");
-    } else {
-        printf("Você é menor de idade.");
-    }
-    return 0;
-}
-</code>
-                </pre>
+            <section id="exalgoritmo">
+                <p>Está na hora de pôr a mão na massa. A seguir temos alguns exercícios de lógica, tente fazê-los e desenvolva suas habilidades.</p>
+                <a href="https://rachacuca.com.br/jogos/missionarios-e-canibais/">Ajude os missionários a atravessar o rio em segurança</a>
+                <a href="https://rachacuca.com.br/jogos/o-lobo-e-a-ovelha/">Ajude o lobo, a ovelha e o repolho a atravessarem o rio</a>
+                <a href="https://studio.code.org/hoc/1?lang=pt-BR">Jogue Angry Birds com linguagem de bloco</a>
+                <a href="https://studio.code.org/flappy/1?lang=pt-BR">Recrie o jogo Flappy Bird de forma divertida usando blocos</a>
             </section>
 
-            <section id="switch">
-                <h2>Estrutura Switch</h2>
-                <p>A estrutura <strong>switch</strong> permite testar uma variável contra várias condições, executando blocos de código diferentes com base no valor da variável.</p>
-                <pre>
-<code>
-#include &lt;stdio.h&gt;
-
-int main() {
-    int dia = 3;
-
-    switch(dia) {
-        case 1:
-            printf("Domingo");
-            break;
-        case 2:
-            printf("Segunda-feira");
-            break;
-        case 3:
-            printf("Terça-feira");
-            break;
-        default:
-            printf("Dia inválido");
-    }
-    return 0;
-}
-</code>
-                </pre>
+            <section id="fluxograma">
+                <h2>Fluxogramas</h2>
+                <p>Os <strong>fluxogramas </strong> descrevem visualmente um processo. Eles são muito importantes para analisarmos as etapas e o que é necessário fazer para solucionar o problema proposto. É uma maneira visual e simplificada de representar um código.</p>
+                <p>Os fluxogramas usam formas geométricas como símbolos, para representar o que está acontecendo sem precisar de uma descrição complexa. Veja os símbolos que você vai utilizar com mais frequência:</p>
+               <img src="/image/TabelaFluxo.PNG" alt="">
+               <p>Veja o exemplo de um fluxograma para calcular a soma de dois números.</p>
+               <p>Agora veremos o exemplo de um fluxograma com uma decisão:</p>
+                <p>Você consegue descrever o que está acontecendo no fluxograma?</p>
+                <p>Resposta: Está sendo calculada a soma entre dois números apenas no caso de ambos serem positivos</p>
             </section>
 
-            <section id="repeticao">
-                <h2>Estruturas de Repetição</h2>
-                <p>As estruturas de repetição <strong>while</strong> e <strong>for</strong> são usadas para executar um bloco de código várias vezes enquanto uma condição for verdadeira.</p>
-
-                <h3>Exemplo de While:</h3>
-                <pre>
-<code>
-#include &lt;stdio.h&gt;
-
-int main() {
-    int i = 0;
-    while (i < 5) {
-        printf("%d\n", i);
-        i++;
-    }
-    return 0;
-}
-</code>
-                </pre>
-
-                <h3>Exemplo de For:</h3>
-                <pre>
-<code>
-#include &lt;stdio.h&gt;
-
-int main() {
-    for (int i = 0; i < 5; i++) {
-        printf("%d\n", i);
-    }
-    return 0;
-}
-</code>
-                </pre>
+            <section id="exfluxograma">
+                <p>Vamos praticar um pouco?</p>
+                
             </section>
 
-            <section id="exercicios">
-                <h2>Exercícios</h2>
+            <section id="dicas">
+                <h2>Dicas</h2>
                 <p>Pratique o uso de estruturas condicionais com os exemplos a seguir:</p>
 
                 <h3>1. Verifique se um número é par ou ímpar:</h3>
-                <pre>
-<code>
-#include &lt;stdio.h&gt;
-
-int main() {
-    int numero;
-    printf("Digite um número: ");
-    scanf("%d", &numero);
-
-    if (numero % 2 == 0) {
-        printf("O número é par.");
-    } else {
-        printf("O número é ímpar.");
-    }
-    return 0;
-}
-</code>
-                </pre>
-
+                
                 <h3>2. Crie um programa que verifica o dia da semana com switch:</h3>
-                <pre>
-<code>
-#include &lt;stdio.h&gt;
-
-int main() {
-    int dia;
-    printf("Digite um número (1-7) para o dia da semana: ");
-    scanf("%d", &dia);
-
-    switch(dia) {
-        case 1:
-            printf("Domingo");
-            break;
-        case 2:
-            printf("Segunda-feira");
-            break;
-        case 3:
-            printf("Terça-feira");
-            break;
-        case 4:
-            printf("Quarta-feira");
-            break;
-        case 5:
-            printf("Quinta-feira");
-            break;
-        case 6:
-            printf("Sexta-feira");
-            break;
-        case 7:
-            printf("Sábado");
-            break;
-        default:
-            printf("Dia inválido");
-    }
-    return 0;
-}
-</code>
-                </pre>
+                
             </section>
 
             <section id="desafios">
@@ -200,55 +96,9 @@ int main() {
                 <p>Testes seu conhecimento com esses desafios:</p>
 
                 <h3>1. Calcule o desconto em uma compra baseado no valor:</h3>
-                <pre>
-<code>
-#include &lt;stdio.h&gt;
-
-int main() {
-    float valor;
-    printf("Digite o valor da compra: ");
-    scanf("%f", &valor);
-
-    if (valor >= 500) {
-        printf("Desconto de 20%%.");
-    } else if (valor >= 300) {
-        printf("Desconto de 15%%.");
-    } else {
-        printf("Desconto de 10%%.");
-    }
-
-    return 0;
-}
-</code>
-                </pre>
-
+                
                 <h3>2. Crie um jogo onde o usuário deve adivinhar um número entre 1 e 10:</h3>
-                <pre>
-<code>
-#include &lt;stdio.h&gt;
-#include &lt;stdlib.h&gt;
-#include &lt;time.h&gt;
-
-int main() {
-    int numero, tentativa;
-    srand(time(NULL));
-    numero = rand() % 10 + 1;
-
-    printf("Adivinhe o número (entre 1 e 10): ");
-    do {
-        scanf("%d", &tentativa);
-        if (tentativa > numero) {
-            printf("Muito alto! Tente novamente: ");
-        } else if (tentativa < numero) {
-            printf("Muito baixo! Tente novamente: ");
-        }
-    } while (tentativa != numero);
-
-    printf("Parabéns! Você adivinhou o número!");
-    return 0;
-}
-</code>
-                </pre>
+                
             </section>
         </div>
     </div>
